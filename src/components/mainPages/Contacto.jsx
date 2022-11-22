@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 const Contacto = () => {
@@ -29,6 +30,10 @@ const Contacto = () => {
             [e.target.name]: e.target.value
         });
     };
+    const onChange = (value) => {
+        console.log("Captcha value:", value);
+    };
+
     return (
         <>
             <p className="titulo-sec">Contacto</p>
@@ -50,7 +55,9 @@ const Contacto = () => {
                     <Form.Control as="textarea" rows={5} placeholder="Ingrese su mensaje o consulta" name="mensaje" value={mensaje} onChange= {handleChange} />
                 </Form.Group>
                 <br/>
-                <div class="g-recaptcha" data-sitekey="TU CLAVE DEL SITIO AQUÍ" data-callback="correctCaptcha"></div>
+                <ReCAPTCHA
+                sitekey="6Ldb7SgjAAAAABh1QbLglwG1mwXb-cNLiBCwExi0"
+                onChange={onChange}/>
                 <br/>
                 <Form.Group controlId="formBasicSubmit">
                     <Form.Control type="submit" value="Enviar" className="btn btn-primary" onClick={handleSubmit} />
