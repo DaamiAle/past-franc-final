@@ -1,3 +1,4 @@
+/*
 .App {
   text-align: center;
 }
@@ -36,3 +37,181 @@
     transform: rotate(360deg);
   }
 }
+*/
+
+
+
+/* Generales */
+
+.col-1 {
+    width: 8.333%;
+}
+
+.col-2 {
+    width: 16.666%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.333%;
+}
+
+.col-5 {
+    width: 41.666%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333%;
+}
+
+.col-8 {
+    width: 66.666%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.333%;
+}
+
+.col-11 {
+    width: 91.666%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+body {
+    background: #94D0D0 !important;
+}
+
+#header,
+#footer {
+    background: #50B0B0 !important;
+}
+
+#footer {
+    margin-top: 4%;
+    padding-top: 2%;
+    padding-bottom: 0;
+}
+
+#btn-close-modal:hover,
+#svg-cart-icon:hover,
+.nav-link:hover {
+    cursor: pointer;
+}
+
+
+.logo-soc {
+    width: calc(0.5rem + 2.5vw);
+    height: calc(0.5rem + 2.5vw);
+}
+
+
+.nav-bar {
+    background: #50A5A5 !important;
+    padding-top: 0.5%;
+    align-items: center;
+}
+
+
+/* Carrusel */
+.gal-img img:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition: all 800ms;
+}
+
+.gal-img:hover {
+    animation-play-state: paused;
+}
+
+.slider-cont {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3), 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 100%;
+}
+
+.gal-img {
+    animation: scroll 15s linear infinite;
+    display: flex;
+    padding-top: 2%;
+}
+
+
+#modal-container {
+    text-align: center;
+    min-width: 100vw !important;
+    min-height: 100vh !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+
+#btn-close-modal {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+    height: calc(font-size);
+}
+
+
+
+
+
+/* Footer */
+
+#footer-cont {
+    padding-bottom: 1%;
+}
+
+.nav-link {
+    font-size: calc(1rem + 0.75vw);
+    margin: 3.5%;
+    padding: 1%;
+}
+
+#mapa,
+#cont,
+#navi-links {
+    width: 100%;
+    padding: 1%;
+}
+
+
+.contacto #cont .simple-text {
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+    margin: 0;
+}
+
+#copyr {
+    font-size: calc(0.5rem + 0.75vw) !important;
+    text-align: center;
+    background-color: #50A5A5;
+    margin-bottom: 0;
+    padding-top: 1%;
+}
+
+#cont .titulo-sec {
+    margin: 0;
+    padding-top: 0;
+}
+
