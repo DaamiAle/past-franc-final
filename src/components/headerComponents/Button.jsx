@@ -4,9 +4,9 @@ const Button = ({texto}) => {
 
     const handleClick = () => {
         if(texto === "Inicio"){
-            window.location.href = "/";
+            window.location.pathname = "/";
         }else{
-            window.location.href = "/" + texto;
+            window.location.pathname = "/" + texto;
         }
     }
     return (
