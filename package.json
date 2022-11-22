@@ -2,7 +2,7 @@
   "name": "past-franc-final",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://coruscating-banoffee-74d9dd.netlify.app/",
+  "homepage": "https://pasteleriafranccesca.netlify.app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
