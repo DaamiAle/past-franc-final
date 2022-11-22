@@ -5,7 +5,6 @@ import Carrito from "./headerComponents/Carrito"
 
 
 const Header = () => {
-    // 
     return (
         <>
             <Container id="header">

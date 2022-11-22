@@ -1,19 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container,Row,Col } from "react-bootstrap";
-/*
-const Modal = ({ handleClose, show, children }) => {
-    const showHideClassName = show ? "modal display-block" : "modal display-none";
-    
-    return (
-        <div className={showHideClassName}>
-        <section className="modal-main">
-            {children}
-            <button onClick={handleClose}>close</button>
-        </section>
-        </div>
-    );
-}
-*/
 
 const Modal = () => {
     const handleClose = () => {
@@ -32,6 +18,5 @@ const Modal = () => {
         </>
     );
 }
-
 
 export default Modal;
