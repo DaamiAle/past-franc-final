@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/DaamiAle/past-franc-final/static/css/main.7b6fb30e.css",
-    "main.js": "/DaamiAle/past-franc-final/static/js/main.16450760.js",
-    "static/js/787.c09b4766.chunk.js": "/DaamiAle/past-franc-final/static/js/787.c09b4766.chunk.js",
-    "index.html": "/DaamiAle/past-franc-final/index.html",
-    "main.7b6fb30e.css.map": "/DaamiAle/past-franc-final/static/css/main.7b6fb30e.css.map",
-    "main.16450760.js.map": "/DaamiAle/past-franc-final/static/js/main.16450760.js.map",
-    "787.c09b4766.chunk.js.map": "/DaamiAle/past-franc-final/static/js/787.c09b4766.chunk.js.map"
+    "main.css": "/static/css/main.7b6fb30e.css",
+    "main.js": "/static/js/main.7e8146a2.js",
+    "static/js/787.c09b4766.chunk.js": "/static/js/787.c09b4766.chunk.js",
+    "index.html": "/index.html",
+    "main.7b6fb30e.css.map": "/static/css/main.7b6fb30e.css.map",
+    "main.7e8146a2.js.map": "/static/js/main.7e8146a2.js.map",
+    "787.c09b4766.chunk.js.map": "/static/js/787.c09b4766.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7b6fb30e.css",
-    "static/js/main.16450760.js"
+    "static/js/main.7e8146a2.js"
   ]
 }
