@@ -129,7 +129,7 @@ body {
 /* Carrusel */
 .gal-img img:hover {
     cursor: pointer;
-    transform: scale(2);
+    transform: scale(1.5);
     transition: all 800ms;
 }
 
@@ -174,9 +174,6 @@ body {
 
 
 
-
-/* Footer */
-
 #footer-cont {
     padding-bottom: 1%;
 }
@@ -185,20 +182,24 @@ body {
     font-size: calc(1rem + 0.75vw);
     margin: 3.5%;
     padding: 1%;
+    margin: 1%;
 }
 
 #mapa,
 #cont,
 #navi-links {
     width: 100%;
-    padding: 1%;
+    padding: 0;
 }
 
 
-.contacto #cont .simple-text {
+.contacto #cont .simple-text,
+#navi-links .simple-text {
     padding-top: 0.25%;
     padding-bottom: 0.25%;
     margin: 0;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 #copyr {
@@ -209,8 +210,18 @@ body {
     padding-top: 1%;
 }
 
-#cont .titulo-sec {
-    margin: 0;
-    padding-top: 0;
+#cont .titulo-sec,
+#navi-links .titulo-sec {
+    margin: 0 !important;
+    padding: 0 !important;
 }
-
+.container > .container{
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 0;
+    padding-right: 0;
+}
+#redes{
+    padding-left: 0;
+    padding-right: 0;
+}

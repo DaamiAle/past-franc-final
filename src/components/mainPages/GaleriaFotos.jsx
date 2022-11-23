@@ -16,7 +16,7 @@ const GaleriaFotos = () => {
 
     return (
         <>
-            <Container>
+            <Container id="galeria">
                 <Row><p className="titulo">Galería de Fotos</p></Row>
                 <Row className="titulo-sec"><p>Tortas</p></Row>
                 <Row  className="slider-cont">

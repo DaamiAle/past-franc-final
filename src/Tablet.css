@@ -13,6 +13,7 @@
     #footer {
         width: 98%;
     }
+    
 
     #titulo-principal {
         font-size: calc(3.5rem + 5.5vw);
@@ -42,7 +43,7 @@
     }
 
     .gal-img img {
-        min-width: 50vw;
+        min-width: 35vw;
         max-width: 100%;
         max-height: 600px;
         padding: 2%;
@@ -54,7 +55,7 @@
         }
 
         100% {
-            transform: translateX(calc(-50vw * 5));
+            transform: translateX(calc(-35vw * 5));
         }
     }
 
@@ -81,8 +82,9 @@
     }
 
     .no-map {
+        padding-left: 4% !important;
+        padding-right: 4%;
         display: flex;
-        padding-left: 8% !important;
         flex-direction: row;
     }
     

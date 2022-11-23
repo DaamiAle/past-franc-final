@@ -4,8 +4,8 @@ import RedesSociales from "./footerComponents/RedesSociales";
 
 const Footer = () => {
 
-    const goToHeader = () => {
-        window.location.href = "#header";
+    const goToHeader = (e) => {
+        window.location.pathname = e.target.id;
     };
 
     return (
@@ -18,12 +18,13 @@ const Footer = () => {
                     <Col className="col-6 no-map">
                         <Col className="col-4">
                             <Row id="navi-links">
-                                <p className="nav-link" type="button" onClick={goToHeader}>Inicio</p>
-                                <p className="nav-link" type="button" onClick={goToHeader}>Galería</p>
-                                <p className="nav-link" type="button" onClick={goToHeader}>Panadería</p>
-                                <p className="nav-link" type="button" onClick={goToHeader}>Chocolatería</p>
-                                <p className="nav-link" type="button" onClick={goToHeader}>Pastelería</p>
-                                <p className="nav-link" type="button" onClick={goToHeader}>Contacto</p>
+                                <p className="titulo-sec">Navegación</p>
+                                <p id="Inicio" className="nav-link simple-text" type="button" onClick={goToHeader}>Inicio</p>
+                                <p id="Galería" className="nav-link simple-text" type="button" onClick={goToHeader}>Galería</p>
+                                <p id="Panadería" className="nav-link simple-text" type="button" onClick={goToHeader}>Panadería</p>
+                                <p id="Chocolatería" className="nav-link simple-text" type="button" onClick={goToHeader}>Chocolatería</p>
+                                <p id="Pastelería" className="nav-link simple-text" type="button" onClick={goToHeader}>Pastelería</p>
+                                <p id="Contacto" className="nav-link simple-text" type="button" onClick={goToHeader}>Contacto</p>
                             </Row>
                         </Col>
                         <Col className="col-8 contacto">
