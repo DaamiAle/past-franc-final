@@ -108,8 +108,13 @@ body {
     overflow: hidden;
     width: 100%;
 }
-
-
+#modal{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#img-modal {
+    margin-top: 5%;
+}
 #modal-container {
     text-align: center;
     min-width: 100vw !important;
