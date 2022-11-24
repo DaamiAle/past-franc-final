@@ -11,7 +11,7 @@ const Modal = () => {
         <>
             <Container id="modal-container">
                 <Row id="modal">
-                    <Col className="btn-container"><p id="btn-close-modal" onClick={()=>handleClose()}>X</p></Col>
+                    <Col className="col-12 btn-container"><p id="btn-close-modal" onClick={()=>handleClose()}>X</p></Col>
                     <Col className="col-12"><img id="img-modal" src="" alt=""/></Col>
                 </Row>
             </Container>
