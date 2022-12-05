@@ -1,0 +1,97 @@
+#footer {
+    background-color: #50B0B0;
+    padding-top: 2%;
+    width: 100%;
+}
+#footer-copyr{
+    text-align: center;
+    padding: 1% 0;
+    font-size: calc(0.5rem + 0.70vw);
+    background-color: #50A5A5;
+    width: 100%;
+}
+#footer-cont{
+    display: flex;
+    padding: 0 1%;
+    padding-bottom: 0.5%;
+}
+#mapa{
+    width: 99%;
+}
+.no-map{
+    display: flex;
+    flex-direction: row;
+}
+.footer-nav{
+    width: 30%;
+    margin-right: 1%; 
+}
+.footer-contacto{
+    width: 70%;
+    margin-left: 1%;
+}
+.footer-contacto #contacto{
+    width: 60%;
+
+}
+#redes-sociales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+}
+#redes-sociales .col{
+    margin: 2%;
+    width: 40%;
+    text-align: center;
+}
+.red-social{
+    width: 50%;
+}
+.footer-contacto{
+    display: flex;
+    flex-direction: row;
+}
+.footer-contacto #contacto{
+    width: 60%;
+} 
+    
+@media (max-width: 578px) {
+    #footer-cont{ flex-direction: column; }
+    .map, .no-map{ width: 100%; }
+    .no-map{ font-size: calc(0.6rem + 0.25vw); }
+    @media (max-width: 432px) {
+        .footer-contacto #contacto{ width: 80%; }
+        #redes-sociales { width: 20%; }
+        #redes-sociales .col{ width: 60%; }
+    }
+    #redes-sociales { padding-top: 2%;}
+    .footer-titulo-sec{ font-size: calc(0.6rem + 0.5vw); text-decoration: underline; }
+}
+
+@media (min-width:579px) and (max-width: 768px) {
+    #footer-cont{ flex-direction: column; }
+    .map, .no-map{ width: 100%; }
+    .no-map{ font-size: calc(0.7rem + 0.25vw); }
+    #redes-sociales { padding-top: 2%;}
+    .footer-titulo-sec{ font-size: calc(0.7rem + 0.5vw); text-decoration: underline; }
+}
+
+@media (min-width:769px) {
+    #footer-cont{ flex-direction: row; }
+    .map{ width: 45%; padding: 1%; }
+    .no-map{ width: 55%; padding: 1%; font-size: calc(0.8rem + 0.25vw);}
+    .footer-titulo-sec{ font-size: calc(0.8rem + 0.5vw); text-decoration: underline; }
+    #redes-sociales { padding-top: 2%;}
+    .red-social{ width: 60%; }
+}
+
+
+
+
+
+
+
+
+
+

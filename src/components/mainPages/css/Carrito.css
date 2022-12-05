@@ -1,0 +1,38 @@
+
+#carrito{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10% 0 10%;
+}
+#carrito .row{
+    width: 100%;
+}
+
+.item-carrito{
+    width: 100%;
+}
+.item-carrito-precio,
+#total-product,
+#total-carrito{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text-izq{
+    text-align: start;
+}
+.text-der{
+    text-align: end;
+}
+#btn-comprar{
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+
+}
+.btn-eliminar{
+    width: 100%;
+    margin: 0.5%;
+    text-align: center;
+}

@@ -1,0 +1,117 @@
+#header{
+    background-color: #50B0B0;
+    padding-top: 2%;
+    width: 100%;
+}
+
+#titulo-principal {
+    font-size: calc(2rem + 5vw);
+    font-style: italic;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    padding: 3% 0;
+}
+.nav-bar {
+    background: #50A5A5;
+    padding: 0.5%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.header-car{
+    width: 10%;
+}
+.header-nav{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bar-btn{
+    text-align: center;
+    padding: 1% 0;
+}
+.btn-carrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-usd p{
+    text-align: center;
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: bold;
+}
+#car-cantidad{
+    font-size: calc(0.5rem + 0.5vw);
+    display: inline-block;
+    background: #FF0000;
+    color: #FFFFFF;
+    padding: 2%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+@media (max-width: 578px) {
+    .bar-btn{
+        width: 33.33%;
+    }
+    @media (max-width: 384px) {
+        .bar-btn{
+            width: 50%;
+        }
+        .btn-carrito img{
+            width:70%;
+        }
+        .header-nav{
+            width: 85%;
+        }
+        .header-car{
+            width: 15%;
+        }
+        @media(max-width: 192px){
+            .bar-btn{
+                width: 100%;
+            }
+            .header-nav{
+                width: 80%;
+            }
+            .header-car{
+                width: 20%;
+            }
+            .btn-carrito img{
+                width:90%;
+            }
+        }
+    }
+    .btn-carrito img{
+        width:70%;
+    }
+    .bar-btn p{
+        font-size: calc(0.7rem + 0.4vw);
+    }
+}
+
+@media (min-width:579px) and (max-width: 768px) {
+    .bar-btn{
+        width: 33.33%;
+    }
+    .btn-carrito img{
+        width:60%;
+    }
+    .bar-btn p{
+        font-size: calc(0.8rem + 0.6vw);
+    }
+}
+
+@media (min-width:769px) {
+    .bar-btn{
+        width: 16.66%;
+    }
+    .btn-carrito img{
+        width:30%;
+    }
+    .bar-btn p{
+        font-size: calc(0.5rem + 1vw);
+    }
+}

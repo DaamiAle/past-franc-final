@@ -8,7 +8,8 @@ import Pasteleria from "./mainPages/Pasteleria";
 import Contacto from "./mainPages/Contacto";
 import BuildingPage from "./mainPages/BuildingPage";
 import GaleriaFotos from "./mainPages/GaleriaFotos";
-
+import Carrito from "./mainPages/Carrito";
+import "./css/Main.css";
 const Main = () => {
     return (
         <>
@@ -20,6 +21,7 @@ const Main = () => {
                     <Route path="/Chocolatería" element={<Chocolateria />} />
                     <Route path="/Pastelería" element={<Pasteleria />} />
                     <Route path="/Contacto" element={<Contacto />} />
+                    <Route path="/Carrito" element={<Carrito />} />
                     <Route path="*" element={<BuildingPage />} />
                 </Routes>
             </Container>

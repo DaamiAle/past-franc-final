@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
+import { Container, Form } from "react-bootstrap";
 import ReCAPTCHA from "react-google-recaptcha";
+import "./css/Formulario.css";
 
 
 const Contacto = () => {
@@ -94,53 +95,54 @@ const Contacto = () => {
 
     return (
         <>
-            <h1 className="text-center">Contacto</h1>
-            <Form className="rounded border border-dark p-3">
-                <Form.Group controlId="formBasicName">
-                    <Form.Label>Nombre</Form.Label>
-                    <Form.Control
-                        type="text"
-                        placeholder="Introduce tu nombre"
-                        name="nombre"
-                        value={nombre}
-                        onChange={handleChange}
+            <Container id="container-formulario">
+                <p className="titulo-sec">Contacto</p>
+                <Form id="formulario">
+                    <Form.Group controlId="formBasicName" className="form-nombre">
+                        <Form.Label id="label-nombre">Nombre</Form.Label>
+                        <Form.Control className="input-nombre"
+                            type="text"
+                            placeholder="Introduce tu nombre"
+                            name="nombre"
+                            value={nombre}
+                            onChange={handleChange}
+                        />
+                    </Form.Group>
+                    <Form.Group controlId="formBasicEmail" className="form-email">
+                        <Form.Label id="label-email">Email</Form.Label>
+                        <Form.Control className="input-email"
+                            type="email"
+                            placeholder="Introduce tu email"
+                            name="email"
+                            value={email}
+                            onChange={handleChange}
+                        />
+                    </Form.Group>
+                    <Form.Group controlId="formBasicMessage" className="form-mensaje">
+                        <Form.Label id="label-mensaje">Mensaje</Form.Label>
+                        <Form.Control className="input-mensaje"
+                            as="textarea"
+                            rows={5}
+                            placeholder="Introduce tu mensaje"
+                            name="mensaje"
+                            value={mensaje}
+                            onChange={handleChange}
+                        />
+                    </Form.Group>
+                    <ReCAPTCHA className="form-recaptcha"
+                        sitekey="6Ldb7SgjAAAAABh1QbLglwG1mwXb-cNLiBCwExi0"
+                        onChange={onChangeRecaptcha}
                     />
-                </Form.Group>
-                <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control
-                        type="email"
-                        placeholder="Introduce tu email"
-                        name="email"
-                        value={email}
-                        onChange={handleChange}
-                    />
-                </Form.Group>
-                <Form.Group controlId="formBasicMessage">
-                    <Form.Label>Mensaje</Form.Label>
-                    <Form.Control
-                        as="textarea"
-                        rows={5}
-                        placeholder="Introduce tu mensaje"
-                        name="mensaje"
-                        value={mensaje}
-                        onChange={handleChange}
-                    />
-                </Form.Group>
-                <ReCAPTCHA
-                    sitekey="6Ldb7SgjAAAAABh1QbLglwG1mwXb-cNLiBCwExi0"
-                    onChange={onChangeRecaptcha}
-                />
-                <br/>
-                <Form.Group controlId="formBasicSubmit">
-                    <Form.Control 
-                        type="submit" 
-                        value="Enviar" 
-                        className="btn btn-primary" 
-                        onClick={handleSubmit} 
-                    />
-                </Form.Group>
-            </Form>
+                    <Form.Group controlId="formBasicSubmit" className="form-submit">
+                        <Form.Control
+                            type="submit" 
+                            value="Enviar" 
+                            className="btn input-submit" 
+                            onClick={handleSubmit} 
+                        />
+                    </Form.Group>
+                </Form>
+            </Container>
         </>
     );
 };

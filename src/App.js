@@ -1,8 +1,8 @@
 import './App.css';
-import './Desktop.css';
+/*import './Desktop.css';
 import './Tablet.css';
-import './Mobile.css';
-import "bootstrap/dist/css/bootstrap.min.css";
+import './Mobile.css';*/
+//import "bootstrap/dist/css/bootstrap.min.css";
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -12,12 +12,22 @@ import { Container, Row } from 'react-bootstrap';
 function App() {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
-            const modal = document.getElementById('modal-container');
-            if (modal.style.display !== 'none') {
-                modal.style.display = 'none';
-            }
+            document.getElementById("modal").style.display = "none";
         }
     });
+    if (!localStorage.getItem('carrito')) {
+        localStorage.setItem('carrito', null);
+    }
+    if (!localStorage.getItem('formatoUSD')) {
+        localStorage.setItem('formatoUSD', false);
+    }
+    fetch('https://api.bluelytics.com.ar/v2/latest')
+        .then((response) => response.json())
+        .then((data) => {
+            localStorage.setItem('dolar', data.blue.value_avg);
+        });
+
+    
     return (
         <>
             <Container id='body'>

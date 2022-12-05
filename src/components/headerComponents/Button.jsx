@@ -11,7 +11,7 @@ const Button = ({texto}) => {
     }
     return (
         <>
-            <p className="nav-but" type="button" onClick={()=>handleClick()}>{texto}</p>
+            <p className="btn" onClick={()=>handleClick()}>{texto}</p>
         </>
     );
 }
