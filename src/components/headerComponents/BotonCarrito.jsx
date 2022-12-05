@@ -12,7 +12,7 @@ const BotonCarrito = () => {
             carritoLS = [];
         }
         setCantidad(carritoLS.length);
-    }, [localStorage.getItem("carrito")]);
+    }, []);
 
     const handleChange = ()=> { 
         localStorage.setItem("formatoUSD", localStorage.getItem("formatoUSD") === "true" ? "false" : "true");

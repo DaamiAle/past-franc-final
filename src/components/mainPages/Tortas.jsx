@@ -3,7 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import "./css/Item.css";
 
 const Tortas = ({ item }) => {
-    const { imagen, nombre, descripcion, precio } = item;
+    const { imagen, nombre, descripcion } = item;
     return (
         <>
             <Container className="item">

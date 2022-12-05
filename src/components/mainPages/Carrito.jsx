@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row } from "react-bootstrap";
 import "./css/Carrito.css";
 
 const Carrito = () => {
@@ -45,7 +45,7 @@ const Carrito = () => {
                         }
                         return acumulador;
                     }, []).map((item) => {
-                        const { cod, imagen, nombre, descripcion, precio, cantidad } = item;
+                        const { cod, nombre, precio, cantidad } = item;
                         let precioUSD = parseFloat((precio / localStorage.getItem("dolar")));
                         return (
                             <Row className="item-carrito">
